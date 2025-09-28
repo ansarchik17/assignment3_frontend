@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .grid-layout {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+    min-height: 70vh;
+    padding: 1rem;
+    background-color: #fafafa;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 2rem;
+  }
+  
+  .grid-layout header {
+    grid-area: header;
+    background-color: #1c8e59;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .grid-layout aside {
+    grid-area: sidebar;
+    background-color: #eaeaea;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .grid-layout main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .grid-layout main h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .grid-layout main p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .grid-layout main img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .grid-layout main img:hover {
+    transform: scale(1.05);
+  }
+  
+  .grid-layout footer {
+    grid-area: footer;
+    background-color: #1c8e59;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
